@@ -206,9 +206,9 @@ of the *first* sequence of **sheet two** to **sheet three**:
 ```
 
 To make restoring easier for yourself, you can mark the corresponding 
-sequences with highlighers of the same color and number them. Thus, 
+sequences with highlighters of the same color and number them. Thus, 
 **sheet one** would have a yellow and a red sequence, both numbered 1, 
-**sheet two* would have a green sequence numbered 1 and a yellow sequence 
+**sheet two** would have a green sequence numbered 1 and a yellow sequence 
 numbered 2, **sheet tree** would have a red and a green sequence, both 
 numbered 2.
 
