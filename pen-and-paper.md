@@ -47,13 +47,15 @@ as for any ordering there exists a corresponding "other" permutation matching
 the ones in the envelope.
 
 Similarly, the missing 8 words in each envelope force the attacker to search 
-through 2048⁸ = 2⁸⁸ possibilities to recover all the words. Thus, in order to 
-recover all the 24 words in the correct order having access to only one of 
-the envelopes, the attacker needs to search through 79 + 88 bits of entropy.
+through 2048⁸ = 2⁸⁸ possibilities to recover all the words. However, this 
+already includes their ordering (8! ≈ 2¹⁶ possibilities), so the corresponding 
+entropy needs to be subtracted. Thus, in order to recover all the 24 words 
+in the correct order having access to only one of the envelopes, the attacker 
+needs to search through 79 + 88 - 16 bits of entropy.
 
 However, the 24 words encode 264 bits, of which only 256 bits encode the 
 random seed, making 8 bits redundant and the total entropy facing the 
-attacker 79 + 88 - 8 = 159 bits. Searching through such a huge key space 
+attacker 79 + 88 - 16 - 8 = 143 bits. Searching through such a huge key space 
 is not feasible with currently available computing power and can be 
 expected to be remain so for the foreseeable future.
 
